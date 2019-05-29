@@ -1,4 +1,4 @@
-# Einführung in ML 3: Posenet
+# Einführung in ML 4: Feature Extractor
 
 [MobileNet](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) ist
 ein auf Geschwindigkeit optimiertes Machine Learning Modell zur Erkennung von Bildern.
