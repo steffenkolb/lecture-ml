@@ -98,9 +98,11 @@ function setupButtons() {
 
 // Forward values to MQTT broker
 function sendMessage(payload) {
-  let message = new Paho.MQTT.Message(str(payload));
-  message.destinationName = mqttTopic;
-  client.send(message);
+  if(clientConnected) {
+    let message = new Paho.MQTT.Message(str(payload));
+    message.destinationName = mqttTopic;
+    client.send(message);
+  }
 }
 
 // Show the results

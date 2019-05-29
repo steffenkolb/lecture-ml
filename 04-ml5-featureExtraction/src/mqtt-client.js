@@ -30,6 +30,8 @@ const broker = {
 
 // Create a client instance
 var client = new Paho.MQTT.Client(broker.hostname, broker.port, broker.path, "regression-client");
+var clientConnected = false;
+
 
 // set callback handlers
 client.onConnectionLost = onConnectionLost;
@@ -48,10 +50,13 @@ function onConnect() {
   let message = new Paho.MQTT.Message("Hello");
   message.destinationName = "hfg/ml/iot";
   client.send(message);
+
+  clientConnected = true;
 }
 
 // called when the client loses its connection
 function onConnectionLost(responseObject) {
+  clientConnected = false;
   if (responseObject.errorCode !== 0) {
     console.log("onConnectionLost:"+responseObject.errorMessage);
   }
