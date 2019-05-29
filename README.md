@@ -11,8 +11,7 @@
 
 ### Repository herunterladen
 
-Ladet euch zunächst dieses Repository herunter. Dies geht über folgenden Link: https://github.com/steffenkolb/lecture-nlp/archive/master.zip
-Entpackt das Archiv und verschiebt es an einen Ort eurer Wahl. Im Archiv findet ihr genau diese `REAMDE.md`-Datei wieder.
+Ladet euch zunächst dieses Repository herunter. Dies geht über folgenden [Link](https://github.com/steffenkolb/lecture-ml/archive/master.zip). Entpackt das Archiv und verschiebt es an einen Ort eurer Wahl. Im Archiv findet ihr genau diese `REAMDE.md`-Datei wieder.
 
 ## Quellen
 
