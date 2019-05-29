@@ -25,15 +25,20 @@ function setup() {
 
     // Find the closest to your word
     let word = yourWordElement.value();
+
+    // convert to lowercase, because model-words are all lowercase
+    word = word.toLowerCase();
+
+    // find similar words in model
     wordVectors.nearest(word, function(err, results) {
         console.log(results);
 
         // write each word into the output-console
         results.forEach(element => {
-        // add word to end of column
-        outputElement.html(element["word"], true);
-        outputElement.html("\n", true);
-        });
-    });  
+            // add word to end of column
+            outputElement.html(element["word"], true);
+            outputElement.html("\n", true);
+            });
+        });  
     });
 }

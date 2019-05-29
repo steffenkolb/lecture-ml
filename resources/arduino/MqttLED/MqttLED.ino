@@ -16,7 +16,7 @@ const char* mqttClientName = "YOUR_CLIENT_NAME";
 // IP address or URL of your MQTT broker/server.
 // For demo purposes you can use  the public mosquitto broker "test.mosquitto.org"
 // See http://test.mosquitto.org
-const char* mqttServer = "192.168.178.57";
+const char* mqttServer = "192.168.178.27";
 
 // basic mqtt port; should not be changed
 const int mqttPort = 1883;
