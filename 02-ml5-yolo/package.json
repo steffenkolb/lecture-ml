@@ -1,0 +1,15 @@
+{
+  "name": "02-ml5-yolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "./node_modules/.bin/http-server ./ -p 1234 "
+  },
+  "author": "Steffen Kolb",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
