@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wekinator meets the web</title>
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@7.0.0/normalize.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/skeleton.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js" type="text/javascript"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div class="example container">
+    <div class="row">
+      <h1>Wekinator meets the web</h1>
+      <h5>Connect to Wekinator via Websocket-to-OSC bridge</h5>
+    </div>
+    <div class="row">
+        <div class="six columns">
+          <div id="canvasContainer"></div>
+        </div>
+        <div class="six columns">
+          <p id="result"></p>
+        </div>
+    </div>
+  </div>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
