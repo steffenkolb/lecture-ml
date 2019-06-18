@@ -37,6 +37,13 @@ function setup() {
 
   // Create the UI buttons
   setupButtons();
+
+  // check if possible to load files
+  if (window.File && window.FileReader && window.FileList && window.Blob) {
+    console.log('Great success! All the File APIs are supported');
+  } else {
+    alert('The File APIs are not fully supported in this browser.');
+  }
 }
 
 /**
@@ -69,6 +76,21 @@ function predict() {
   regressor.predict(gotResults);
 }
 
+// Save the current model and weights to files
+function saveModel() {
+  regressor.save()
+    .catch(e => select("#statusModelSave").html(e.message));
+}
+
+function handleModelLoad() {
+  let files = select("#modelFiles").elt.files;
+  if(files == null || files.length < 2) {
+    select("#statusModelLoad").html("You need to choose model and weights files.")
+  } else {
+    regressor.load(files).then(() => select("#statusModelLoad").html("Model loaded."));
+  }
+}
+
 // A util function to create UI buttons
 function setupButtons() {
   slider = select('#slider');
@@ -94,6 +116,10 @@ function setupButtons() {
 
   // Predict Button
   select('#buttonPredict').mousePressed(predict);
+
+  // save load button
+  select('#buttonSave').mousePressed(saveModel);
+  select('#buttonLoad').mousePressed(handleModelLoad);
 }
 
 // Forward values to MQTT broker
