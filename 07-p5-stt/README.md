@@ -1,10 +1,10 @@
-# Einführung in ML 4: Feature Extractor
+# Einführung in ML 7: Speech to Text
 
-tbd
+In diesem Experiment nutzen wir die [P5js Speech Bibliothek](http://ability.nyu.edu/p5.js-speech/).
 
 ## Installation
 
-ML5js-Experimente werden über einen Webserver zur Verfügung gestellt.
+P5js-Experimente werden über einen Webserver zur Verfügung gestellt.
 Hierfür muss ein Webserver installieren werden. Dies geschieht wie gewohnt über NPM:
 
 ```bash
