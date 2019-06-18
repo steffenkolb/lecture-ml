@@ -1,6 +1,6 @@
-# Einführung in ML 4: Feature Extractor
+# Einführung in ML 6: Speech Recognition with ML5js
 
-tbd
+In diesem Experiment erkennen wir bestimmte Befehle mithilfe von [ML5JS Speech Recognition](https://ml5js.org/reference/api-soundClassifier/).
 
 ## Installation
 
