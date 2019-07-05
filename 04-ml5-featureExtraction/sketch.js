@@ -83,6 +83,10 @@ function saveModel() {
 }
 
 function handleModelLoad() {
+  // when loading from a URL
+  // regressor.load("./weights/model.json").then(() => select("#statusModelLoad").html("Model loaded."));
+  
+  // loading from user selected files
   let files = select("#modelFiles").elt.files;
   if(files == null || files.length < 2) {
     select("#statusModelLoad").html("You need to choose model and weights files.")
