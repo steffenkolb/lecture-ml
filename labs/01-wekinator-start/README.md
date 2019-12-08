@@ -47,12 +47,12 @@ MacOS hat mit einem der letzten Systemupdates eingeführt, dass nur von Apple ze
 
 1. Startet ein Programm über Doppelklick auf das Anwendungssymbol. Ihr bekommt folgenden Fehler:
 
-![Wekinator Setup](./images/input_macos_error-1.png)
+![MacOS Error 1](./images/input_macos_error-1.png)
 
 2. Wähle im Popup `OK`.
 3. Klicke nun mit der rechten Maustaste erneut auf das Anwendungssymbol (alternativ: STRG+Klick) und wähle `Öffnen`. Es erscheint ein weitereres Fenster:
 
-![Wekinator Setup](./images/input_macos_error-2.png)
+![MacOS Error 2](./images/input_macos_error-2.png)
 
 4. Wähle nun die Option `Öffnen`. Das Programm startet und kann ab sofort normal über einen Doppelklick gestartet werden.
 
@@ -64,7 +64,7 @@ Starte die Anwendung `Processing_TriggerText_1Classifier` im Ordner `Outputs`.
 
 Bevor Wekinator klassifizieren kann, müssen wir ihm beibringen, welche Mausposition für welche Klasse steht. Im Wekinator-Fenster findet ihr den vorher definierten Ausgabekanal `outputs-1`. Daneben ist ein Dropdown-Fenster, in welchem die unterschiedlichen Klassen gewählt werden können.
 
-![Wekinator Setup](./images/wekinator-train.png)
+![Wekinator Train](./images/wekinator-train.png)
 
 Nun erzeugen wir für jede Klasse Trainingsdaten:
 
@@ -72,7 +72,7 @@ Nun erzeugen wir für jede Klasse Trainingsdaten:
 2. Anschließen starten wir das Training über `Start Recording`
 3. Jetzt erzeugen wir Trainingsdaten, indem wir im Fenster der Anwendung `Simple_MouseXY_2Inputs` in einer Ecke mit dem Mauszeigen umherfahren. Im Wekinator-Fenster könnt ihr sehen, wie die Anzahl der `Examples` ansteigt.
 
-![Wekinator Setup](./images/wekinator-trained.png)
+![Wekinator Trained](./images/wekinator-trained.png)
 
 4. Um eine weitere Klasse zu trainieren, wähle einfache `Stop Recording`, wähle eine weitere Klasse vom Dropdown-Menü und starte die Aufzeichnung über `Start Recording`. Mache dies, bis für alle Klassen Trainingsdaten vorliegen.
 
@@ -82,7 +82,7 @@ Nun erzeugen wir für jede Klasse Trainingsdaten:
 
 Sobald das Model trainiert ist, können wir die Anwendung über `Run` starten. Wenn ihr nun im Fenster der Input-Anwendung `Simple_MouseXY_2Inputs` den Mauszeigen bewegt, sollte im Fenster der Ouput-Anwendung `Processing_TriggerText_1Classifier` eine Farbe und die Zahl der Klasse sehen.
 
-![Wekinator Setup](./images/wekinator-run.png)
+![Wekinator Run](./images/wekinator-run.png)
 
 ## Aufgaben
 

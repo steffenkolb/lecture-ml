@@ -1,6 +1,6 @@
 # Einführung in ML: Wekinator Web mit DWT
 
-Diese Experiment basiert Wekinator-Web.
+Diese Experiment basiert auf Wekinator-Web.
 
 Anstatt die Eingabe per Maus-Position direkt zu Klassifizieren, trainieren wir das Model auf Veränderung der Mausposition über die Zeit.
 

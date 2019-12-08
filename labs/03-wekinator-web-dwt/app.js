@@ -55,15 +55,6 @@ io.on('connection', function (websocket) {
   // count users
   CONNECTED_USERS += 1;
 
-  // forward data received via websocket to OSC
-  websocket.on('inputData', function (data) {
-    // activate for debugging
-    /* console.log(data); */
-
-    // send data via OSC to wekinator
-    inputDeviceData(data.x, data.y);
-  });
-
   /**
    * Create a new OSC-server to receive OSC output-messages from Wekinator.
    * Those messages are then directly send to the website via websockets.
@@ -78,38 +69,23 @@ io.on('connection', function (websocket) {
     websocket.emit('outputData', msg);
   });
 
+  // forward data received via websocket to OSC
+  websocket.on('inputData', (data) => inputDeviceData(data.x, data.y));
+
+  // whenever a websocket event is triggered we will call the corresponding method below
+  websocket.on('startRecording', (gesture) => startRecording(gesture));
+  websocket.on('stopRecording', stopRecording);
+  websocket.on('startPrediction', startPrediction);
+  websocket.on('stopPrediction', stopPrediction);
+  websocket.on('deleteModel', deleteModel);
+
   // if a user disconnects, we need to close the OSC connection as well
-  websocket.on('disconnect', function(){
+  websocket.on('disconnect', function () {
     console.log('a user disconnected, cleaning up resources');
     oscServer.close();
 
     // keep track of connected users
     CONNECTED_USERS -= 1;
-  });
-
-  // this method registers, if the user wants to start recording for a gesture
-  websocket.on('startRecording', function (gesture) {
-    startRecording(gesture);
-  });
-
-  // this method registers, if the user wants to stop recording for a gesture
-  websocket.on('stopRecording', function () {
-    stopRecording();
-  });
-
-  // this method registers, if the user wants to start predictions
-  websocket.on('startPrediction', function () {
-    startPrediction();
-  });
-
-  // this method registers, if the user wants to stop predictions
-  websocket.on('stopPrediction', function () {
-    stopPrediction();
-  });
-
-  // this method registers, if the user wants to stop predictions
-  websocket.on('deleteModel', function () {
-    deleteModel();
   });
 });
 
