@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Wekinator meets the web</title>
+  <title>WekinatorDWT meets the Web</title>
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@7.0.0/normalize.css" crossorigin="anonymous">
   <link rel="stylesheet" href="style/skeleton.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +16,29 @@
 <body>
   <div class="example container">
     <div class="row">
-      <h1>Wekinator meets the web</h1>
-      <h5>Connect to Wekinator via Websocket-to-OSC bridge</h5>
+      <h3>WekinatorDWT meets the web</h1>
+      <h5>Draw a shape</h5>
     </div>
+    <form>
+      <div class="row">
+        <div class="three columns">
+        <input type="button" class="u-full-width" value="Recording" id="toggleRecording">
+        </div>
+        <div class="three columns" id="gestures">
+          <select class="u-full-width" id="gesture-select">
+            <option value="1">Swipe Right</option>
+            <option value="2">Swipe Down</option>
+            <!-- Add your third gesture here-->
+          </select>
+        </div>
+        <div class="three columns">
+          <input type="button" class="u-full-width" value="Prediction" id="togglePrediction">
+        </div>
+        <div class="three columns">
+          <input type="button" class="u-full-width button-destruct" value="Delete Model" id="deleteModel">
+        </div>
+      </div>
+    </form>
     <div class="row">
         <div class="six columns">
           <div id="canvasContainer"></div>
