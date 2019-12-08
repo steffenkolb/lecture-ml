@@ -34,7 +34,7 @@ Screenshot:
 
 Drücke zum starten des Probjekt auf `Next`.
 
-Die Einstellungen des Projekt hängen von den Parametern der Eingabe- und Ausgabeanwendungen ab. In diesem Projekt möchten wir die `X` und `Y`-Position des Mauszeigers (2 Input-Kanäle) auf einer von fünf Klassen (1 Output-Kanal) abbilden.
+Die Einstellungen des Projekst hängen von den Parametern der Eingabe- und Ausgabeanwendungen ab. In diesem Projekt möchten wir die `X` und `Y`-Position des Mauszeigers (2 Input-Kanäle) auf eine von fünf Klassen (1 Output-Kanal) abbilden.
 
 ### Eingabe-Anwendung starten
 
@@ -93,7 +93,8 @@ Sobald das Model trainiert ist, können wir die Anwendung über `Run` starten. W
     * Klasse 4: links unten
     * Klasse 5: rechts unten
 
-2. 
+2. Trainiere das Modell auf Klassen ohne genau abzugrenzen
+    * Wie gut funktioniert die Erkennung nun?
 
 ## Weitere Infos
 
