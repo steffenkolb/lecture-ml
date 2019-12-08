@@ -76,3 +76,8 @@ Das Model hat nun gelernt, wie die Gesten aussehen.
     * Hierzu musst du im Wekinator Projekt eine dritte Geste konfigurieren
     * Füge in der `index.html` eine weitere Auswahlmöglichkeit hinzu
     * Füge in der `public/sketch.js` Datei eine dritte Geste hinzu
+    * Vergiss nicht, die Geste auch zu trainieren!
+
+3. Steuere mithilfe der Gesten eine kleine Kugel über das Feld
+    * Siehe folgendes Beispiel als Hilfe: [Move Ball with Keyboard](https://editor.p5js.org/2sman/sketches/rkGp1alib)
+    * Verschiebe die Inhalte der `keyPressed`-Methode aus dem Beispiel in die `gestureRecognized`-Methode des Experiments

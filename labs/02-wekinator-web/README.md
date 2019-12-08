@@ -88,3 +88,6 @@ Das Model hat nun gelernt, wie `X` und `Y` Position der Maus in `R,G,B` Werte zu
     * Erweitere die `sketch.js` Datei
     * Nutze P5js `text()` (https://p5js.org/reference/#/p5/text)
     * Aktualisiere den Text innerhalb der `draw()`-Methode
+
+3. Verwende die Anwendung `Simple_MouseXY_2Inputs` als Eingabe
+    * Jede Anwendung die per OSC Nachrichten an Wekinator senden kann, kann verwendet werden, solange die Inputs stimmen.

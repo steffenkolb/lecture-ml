@@ -58,14 +58,8 @@ function setup() {
     function(data) {
       // did we receive a gesture?
       if(data.length == 1){
-        // gestures will have the same name defined in Wekinator, here you see the default values
-        if(data[0] == '/output_1') {
-          console.log('Recognized a swipe right');
-          predictedGesture = 1;
-        } else if (data[0] == '/output_2') {
-          console.log('Recognized a swipe down');
-          predictedGesture = 2;
-        }
+        // interpret the output data of Wekinator
+        gestureRecognized(data[0]);
       }
     }
   );
@@ -96,7 +90,20 @@ function draw() {
   background('rgba(200,200,200,0.1)');
 }
 
-
+/**
+ * Gestures will have the same name defined in Wekinator.
+ * The default values are "/output_1" and "/output_2", ...
+ */
+function gestureRecognized(gesture) {
+  if (gesture == '/output_1') {
+    console.log('Recognized a swipe right');
+    predictedGesture = 1;
+  } else if (gesture == '/output_2') {
+    console.log('Recognized a swipe down');
+    predictedGesture = 2;
+  }
+  // insert your third gesture here
+}
 
 
 
