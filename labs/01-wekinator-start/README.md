@@ -1,7 +1,7 @@
 # Einführung in ML 1: Wekinator Start (Classification)
 
 Dieses Experiment dient zur Einführung in [Wekinator](http://www.wekinator.org).
-Wir nutzen *klassifizieren* eine simple Eingabe.
+Wir *klassifizieren* eine simple Eingabe.
 
 ## Installation
 
