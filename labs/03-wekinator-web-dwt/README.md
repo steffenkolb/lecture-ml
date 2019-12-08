@@ -33,10 +33,6 @@ Starte ein neues Wekinator-Projekt mit den folgenden Einstellungen:
 | **Type** | **All dynamic time warping (default settings)** |
 | **with** | **2 gesture types** |
 
-Screenshot:
-
-![Wekinator Setup](./images/wekinator-setup.png)
-
 ## Das Experiment starten
 
 Das Experiment starten wir nun wie gewohnt über npm:
