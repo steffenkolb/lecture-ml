@@ -4,7 +4,7 @@ Diese Experiment basiert Wekinator-Web.
 
 Anstatt die Eingabe per Maus-Position direkt zu Klassifizieren, trainieren wir das Model auf Veränderung der Mausposition über die Zeit.
 
-Wekinator bietet hierfür die Möglichkeit des [Dynamic Time Warping](http://www.wekinator.org/detailed-instructions/#Dynamic_time_warping_in_Wekinator). DWT beschreibt einen [Algorithmus](https://de.wikipedia.org/wiki/Dynamic-Time-Warping) mehrere Wertreihenfolgen aufeinander abzubilden, auch wenn deren Länger unterschiedlich ist. Zum Beispiel ist es so möglich eine Geste wiederzuerkennen, auch wenn sie nicht identisch ausgeführt wird.
+Wekinator bietet hierfür die Möglichkeit des [Dynamic Time Warping](http://www.wekinator.org/detailed-instructions/#Dynamic_time_warping_in_Wekinator). DWT beschreibt einen [Algorithmus](https://de.wikipedia.org/wiki/Dynamic-Time-Warping), mit welchem mehrere Wertreihenfolgen aufeinander abgebildet werden können, auch wenn deren Länge unterschiedlich ist. Zum Beispiel ist es so möglich eine Geste wiederzuerkennen, auch wenn sie nicht identisch ausgeführt wird.
 
 ## Installation
 
