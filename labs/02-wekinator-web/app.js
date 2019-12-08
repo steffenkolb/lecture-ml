@@ -72,13 +72,7 @@ io.on('connection', function (websocket) {
   CONNECTED_USERS += 1;
 
   // forward data received via websocket to OSC
-  websocket.on('inputData', function (data) {
-    // activate for debugging
-    /* console.log(data); */
-
-    // send data via OSC to wekinator
-    inputDeviceData(data.x, data.y);
-  });
+  websocket.on('inputData', (data) => inputDeviceData(data.x, data.y));
 
   /**
    * Create a new OSC-server to receive OSC output-messages from Wekinator.
