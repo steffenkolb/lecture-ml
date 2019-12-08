@@ -16,7 +16,7 @@ Ladet euch zunächst dieses Repository herunter. Dies geht über folgenden [Link
 
 ### NodeJS Testen
 
-- [Node.js][4] der Version 8.5 oder höher
+- [Node.js](http://nodejs.org) der Version 8.5 oder höher
 
     ```bash
     # determine node version
