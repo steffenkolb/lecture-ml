@@ -47,7 +47,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
 
     Diese Zeile startet die Klassifikation des aktuellen Kamerabilds. Anschließend wird die Methode `gotResults` aufgerufen.
 
-3. Implementiere die Methode `gotResults` um die Ergenisse auszugeben (z.B. über `console.log(...)`):
+3. Implementiere die Methode `gotResults` um die Ergenisse auszugeben (z.B. über `console.log(...)`). Hinweis, wenn ein Fehler auftritt, ist das `results`-Objekt `null`!
 
     ```javascript
     function gotResult(err, results) {
@@ -93,12 +93,21 @@ Erweitere das Ergebnis aus Aufgabe 1:
     * Erweitere die `gotResults()`-Methode und prüfe, ob das aktuell gesuchte Word gefunden wurde
 
     ```javascript
-    if(results[0].label == words[currentWord]) {
+    // ensure we have got a valid result
+    if(results) {
+      // get the *top* result
+      let topResults = results[0].label;
+      // split the list into an array
+      let topResultsArray = topResults.split(', ');
+      
+      // check if the currentWord is included in the top result
+      if (topResultsArray.includes(words[currentWord])) {
         // das wort wurde erkannt
         // Lobe den Spieler!
 
         // springe zum nächsten Wort, oder zurück zum ersten, wenn wir durch sind
         currentWord = (currentWord + 1) % 3;
+      }
     }
     ```
 
