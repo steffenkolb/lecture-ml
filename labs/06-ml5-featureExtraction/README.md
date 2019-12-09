@@ -74,7 +74,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 
 5. Nun sind wir fast am Ziel. Wir haben ein trainiertes Modell. Nun soll es auch arbeiten.
 
-    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen (Id des Buttons ist `buttonPredict`)
+    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen (Id des Buttons ist `predict`)
 
     ```javascript
     regressor.predict(handleResults);
