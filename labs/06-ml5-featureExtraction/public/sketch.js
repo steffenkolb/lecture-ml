@@ -33,7 +33,7 @@ function setup() {
 
   // Access the slider
   slider = select('#slider');
-
+  
 }
 
 /**
@@ -49,13 +49,12 @@ function draw() {
   noStroke();
 
   // this line will fill the subsequent graphics with the predicted "lightValue"
-  fill(lightValue, lightValue, lightValue);
+  // because the value is between 0 and 1, we need to multiply it
+  fill(lightValue * 255);
 
   // draw the light
   circle(170, 140, 50, 50);
 }
-
-
 
 //// These are helper functions: nothing for you to do here
 
