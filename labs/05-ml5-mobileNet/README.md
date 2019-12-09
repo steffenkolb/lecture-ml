@@ -37,7 +37,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
     classifier = ml5.imageClassifier('MobileNet', video, modelReady);
     ```
 
-    Hiermit wird ein `MobielNet`-Classifier erzeugt, mit dem Video-Bild als Input. Sobald das Modell geladen wurde, wir die Methode `modelReady` aufgerufen (diese ist bereits im Code hinterlegt).
+    Hiermit wird ein `MobielNet`-Classifier erzeugt, mit dem Video-Bild als Input. Sobald das Modell geladen wurde, wird die Methode `modelReady()` aufgerufen (diese ist bereits im Code hinterlegt).
 
 2. Starte die Erkennung des Classifiers mit jedem Durchlauf der `draw()`-Methode:
 
@@ -45,7 +45,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
     classifier.classify(gotResult);
     ```
 
-    Diese Zeile startet die Klassifikation des aktuellen Kamerabilds. Anschließend wird die Methode `gotResults` aufgerufen.
+    Diese Zeile startet die Klassifikation des aktuellen Kamerabilds. Anschließend wird die Methode `gotResults()` aufgerufen.
 
 3. Implementiere die Methode `gotResults` um die Ergenisse auszugeben (z.B. über `console.log(...)`). Hinweis, wenn ein Fehler auftritt, ist das `results`-Objekt `null`!
 
