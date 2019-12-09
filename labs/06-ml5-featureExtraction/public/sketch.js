@@ -11,7 +11,7 @@ let regressor;
 let slider;
 
 // this varialbe will store the currently detected light-value
-let lightValue = 127;
+let lightValue = 5;
 
 /**
  * The setup() function is called once when the program starts.
@@ -31,24 +31,9 @@ function setup() {
   video.size(width, height);
   video.hide();
 
-  // todo: Create regressor here
-
   // Access the slider
   slider = select('#slider');
 
-  // When the 'Add Sample' button is pressed, add the current frame
-  // from the video with the current slider-value als label to the classifier
-  select('#addSample').mousePressed(function () {
-    // todo: implement
-  });
-
-  // Train Button
-  select('#train').mousePressed(function () {
-    regressor.train();
-  });
-
-  // Predict Button
-  select('#buttonPredict').mousePressed(predict);
 }
 
 /**
@@ -83,16 +68,4 @@ function modelReady() {
 // This function is called when the regressor is ready to consume the video information
 function videoReady() {
   select('#statusVideo').html('Video ready');
-}
-
-// Classify the current frame.
-function predict() {
-  regressor.predict(gotResults);
-}
-
-// Show the results
-function gotResults(result) {
-  lightValue = result.value;
-  // start predicting again
-  predict();
 }
