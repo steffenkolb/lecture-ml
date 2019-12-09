@@ -61,7 +61,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 
 Zum Training stellst du in Wekinator den gewünschten Regressions-Wert ein und erzeugst Trainingsdaten:
 
-1. Definiere einen Ausgabewert über die Slider. Der erste steht für den *Rot*-Wert, der zweite für *Blau* und der dritte für *Grün*. Das `Canvas` auf der Website sollte die gewählt Farbe widerspiegeln.
+1. Definiere einen Ausgabewert über die Slider. Der erste steht für den *Rot*-Wert, der zweite für *Grün* und der dritte für *Blau*. Das `Canvas` auf der Website sollte die gewählt Farbe widerspiegeln.
 ![Wekinator Train](./images/wekinator-train.png)
 2. Starte die Aufzeichnung mit `Start Recording``
 3. Bewege die Maus in der Website um Trainingsdaten zu erzeugen

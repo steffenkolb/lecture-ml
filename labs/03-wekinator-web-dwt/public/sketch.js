@@ -87,7 +87,7 @@ function draw() {
   }
   // Add a third gesture here
 
-  background('rgba(200,200,200,0.1)');
+  background('rgba(200,200,200,0.3)');
 }
 
 /**
@@ -157,7 +157,9 @@ function toggleRecording() {
   shouldRecord = !shouldRecord;
   shouldPredict = false;
   btnToggleRecording.elt.classList.toggle('button-primary');
-  btnTogglePredict.elt.classList.remove('button-primary')
+  btnToggleRecording.elt.value = shouldRecord ? 'Stop Recording' : 'Start Recording';
+  btnTogglePredict.elt.classList.remove('button-primary');
+  btnTogglePredict.elt.value = 'Run';
 }
 
 /**
@@ -178,7 +180,9 @@ function togglePrediction() {
   shouldRecord = false;
   shouldPredict = !shouldPredict;
   btnTogglePredict.elt.classList.toggle('button-primary');
-  btnToggleRecording.elt.classList.remove('button-primary')
+  btnTogglePredict.elt.value = shouldPredict ? 'Stop' : 'Run';
+  btnToggleRecording.elt.classList.remove('button-primary');
+  btnToggleRecording.elt.value = 'Start Recording';
 
   if (shouldPredict) {
     startPrediction();

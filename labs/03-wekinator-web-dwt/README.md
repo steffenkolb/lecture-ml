@@ -50,7 +50,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 DTW Modelle werden nicht im klassischen Sinne trainiert. Man gibt stattdessen direkt Beispiele für eine Geste an. Im Beispiel sind bereits zwei Gesten vorgesehen.
 
 1. Wähle auf der Website die Geste, die aufgezeichnet werden soll
-2. Starte die Aufzeichnung mit `Recording``
+2. Starte die Aufzeichnung mit `Start Recording`
 3. Klicke und ziehe die Maus in der Website um Trainingsdaten zu erzeugen
 4. Speichere die Aufzeichnung indem du in Wekinator auf das "+" neben der Geste klickst.
 ![Wekinator Setup](./images/dtw_row.jpg)
@@ -60,9 +60,10 @@ DTW Modelle werden nicht im klassischen Sinne trainiert. Man gibt stattdessen di
 
 Das Model hat nun gelernt, wie die Gesten aussehen.
 
-1. Starte das Model indem du in der Website auf `Prediction` klickst
-2. Klicke und ziehe die Maus über das `Canvas` in der Website
-3. Neben dem Zeiger wird je nach Geste eine anderer Text erscheinen
+1. Du wirst die Bewehungen niemals zu 100% treffen, setze daher den "Threshold"-Slider in Wekinator auf etwa 90%.
+2. Starte das Model indem du in der Website auf `Run` klickst
+3. Klicke und ziehe die Maus über das `Canvas` in der Website
+4. Neben dem Zeiger wird je nach Geste eine anderer Text erscheinen
 
 ## Aufgaben
 
