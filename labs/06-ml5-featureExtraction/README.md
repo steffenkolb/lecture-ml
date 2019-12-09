@@ -59,7 +59,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
     });
     ```
 
-    * Um nun dem Regressor ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen und einen Wert (ein Label) übergeben:
+    * Um nun dem Regressor ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen und einen Wert (ein Label) übergeben. Wichtig, es können für die Regression nur Werte zwischen 0 und 1 verwendet werden.:
 
     ```javascript
     select('#addSample').mousePressed(function () {
@@ -70,11 +70,11 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 4. Nachdem wir nun Trainingsdaten erzeugen können. Sollten wir das Modell auch trainieren.
 
     * Greife auf den Button `Train` ebenso zu, wie im Schritt davor (Hinweis, dessen id ist `train`)
-    * Um den Regressor zu trainieren, müssen wir lediglich seine `train`-Methode aufrufen
+    * Um den Regressor zu trainieren, müssen wir lediglich seine `train`-Methode aufrufen (Siehe [featureExtractor.train()](https://learn.ml5js.org/docs/#/reference/feature-extractor?id=train)
 
 5. Nun sind wir fast am Ziel. Wir haben ein trainiertes Modell. Nun soll es auch arbeiten.
 
-    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen (Id des Buttons ist `buttonPredict`)
+    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen (Id des Buttons ist `predict`)
 
     ```javascript
     regressor.predict(handleResults);
@@ -84,7 +84,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 
     ```javascript
     // Handle the results
-    function handleResults(result) {
+    function handleResults(err, result) {
         lightValue = result.value;
 
         // start predicting again
