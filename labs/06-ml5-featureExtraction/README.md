@@ -98,7 +98,11 @@ Du hast nun ein eigenes Machine Learning Modell, welches aus den Features des Mo
 
 ## Aufgabe 2
 
-1. Ersetze den *Regressor* durch einen *Klassifikator*
+1. Lasse die Kugel *in deiner Hand schweben*
+    * Verändere die Position der Kugel, anstatt die Helligkeit
+    * Hinweis: Ein Regressor gibt nur eine Zahl zurück, somit kannst du nur die X- oder Y-Postion der Kugel verändern
+
+2. Ersetze den *Regressor* durch einen *Klassifikator*. Färbe die Kugel je nach Klasse anders ein.
     * Ersetze den Slider durch ein DropDown ([Select / Option](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select))
     * Siehe [featureExtractor.classification](https://learn.ml5js.org/docs/#/reference/feature-extractor?id=classificationvideo-callback)
     * Siehe [featureExtractor.classify](https://learn.ml5js.org/docs/#/reference/feature-extractor?id=classify)
