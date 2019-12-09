@@ -50,7 +50,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
 3. Implementiere die Methode `gotResults` um die Ergenisse auszugeben (z.B. über `console.log(...)`):
 
     ```javascript
-    function gotResult(err, results) {
+    function gotResult(results) {
         // do something with the results here
     }
     ```
