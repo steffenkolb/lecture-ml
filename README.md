@@ -4,6 +4,7 @@
 
 - Computer mit einem Browser
 - Terminal (zum Beispiel [CMDER](http://cmder.net) für Windows oder [iTerm](https://www.iterm2.com) für MacOS)
+- For MacOS: install [Java Runtime](https://www.java.com/en/download/mac_download.jsp)
 - [Wekinator](https://github.com/fiebrink1/wekinator/releases/tag/v2.1.0.4)
 - [Node.js](http://nodejs.org)
 - [Visual Studio Code](https://code.visualstudio.com)
