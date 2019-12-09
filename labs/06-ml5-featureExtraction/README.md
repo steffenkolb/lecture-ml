@@ -59,7 +59,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
     });
     ```
 
-    * Um nun dem Regressor ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen und einen Wert (ein Label) übergeben:
+    * Um nun dem Regressor ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen und einen Wert (ein Label) übergeben. Wichtig, es können für die Regression nur Werte zwischen 0 und 1 verwendet werden.:
 
     ```javascript
     select('#addSample').mousePressed(function () {
