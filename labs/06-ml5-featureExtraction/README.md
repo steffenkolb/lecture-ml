@@ -84,7 +84,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 
     ```javascript
     // Handle the results
-    function handleResults(result) {
+    function handleResults(err, result) {
         lightValue = result.value;
 
         // start predicting again
