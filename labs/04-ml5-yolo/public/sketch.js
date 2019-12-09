@@ -29,7 +29,7 @@ function setup() {
   video.size(320, 240);
 
   // Create a YOLO method
-  yolo = ml5.YOLO(video, startDetecting);
+  yolo = ml5.YOLO(video, modelLoaded);
 
   // Hide the original video
   video.hide();
@@ -47,6 +47,38 @@ function draw() {
   // draw video image
   image(video, 0, 0, width, height);
 
+  drawObjects(objects);
+}
+
+/**
+ * This method is called when the model has loaded successfully
+ */
+function modelLoaded() {
+  status.html('Model loaded successfully.');
+  detect();
+}
+
+/**
+ * Recursively starts detection of objects on the image of the camera
+ */
+function detect() {
+  yolo.detect(function (err, results) {
+    // store detected objects into variable
+    objects = results;
+
+    // recursively call detect again
+    detect();
+  });
+}
+
+/**
+ * Will draw a box around the detected objects and add a label to it
+ * 
+ * See: https://learn.ml5js.org/docs/#/reference/yolo?id=detect
+ * 
+ * @param {*} objects returns an array of objects containing class names, bounding boxes and probabilities.
+ */
+function drawObjects(objects) {
   // go through all objects found by the network
   for (let i = 0; i < objects.length; i++) {
 
@@ -61,16 +93,4 @@ function draw() {
     stroke(115, 252, 214);
     rect(objects[i].x * width, objects[i].y * height, objects[i].w * width, objects[i].h * height);
   }
-}
-
-function startDetecting() {
-  status.html('Model loaded successfully.');
-  detect();
-}
-
-function detect() {
-  yolo.detect(function (err, results) {
-    objects = results;
-    detect();
-  });
 }
