@@ -97,8 +97,8 @@ Erweitere das Ergebnis aus Aufgabe 1:
         // das wort wurde erkannt
         // Lobe den Spieler!
 
-        // springe zum nächsten Wort
-        currentWord = currentWord + 1;
+        // springe zum nächsten Wort, oder zurück zum ersten, wenn wir durch sind
+        currentWord = (currentWord + 1) % 3;
     }
     ```
 
