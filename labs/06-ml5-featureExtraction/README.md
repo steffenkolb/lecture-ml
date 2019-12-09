@@ -59,7 +59,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
     });
     ```
 
-    * Um nun dem regresser ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen, und dem Bild einen Wert (ein Label) verpassen:
+    * Um nun dem Regressor ein Bild hinzufügen, muss man lediglich dessen `addImage`-Methode aufrufen und einen Wert (ein Label) übergeben:
 
     ```javascript
     select('#addSample').mousePressed(function () {
@@ -74,7 +74,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 
 5. Nun sind wir fast am Ziel. Wir haben ein trainiertes Modell. Nun soll es auch arbeiten.
 
-    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen
+    * Wie in der Übung 05 mit `MobileNet`, rufen wir die `predict` Methode des Modells auf. Dies soll allerdings erst beim Klicken auf den Button `Predict` geschehen (Id des Buttons ist `buttonPredict`)
 
     ```javascript
     regressor.predict(handleResults);
