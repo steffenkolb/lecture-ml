@@ -70,7 +70,7 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
 4. Nachdem wir nun Trainingsdaten erzeugen können. Sollten wir das Modell auch trainieren.
 
     * Greife auf den Button `Train` ebenso zu, wie im Schritt davor (Hinweis, dessen id ist `train`)
-    * Um den Regressor zu trainieren, müssen wir lediglich seine `train`-Methode aufrufen
+    * Um den Regressor zu trainieren, müssen wir lediglich seine `train`-Methode aufrufen (Siehe [featureExtractor.train()](https://learn.ml5js.org/docs/#/reference/feature-extractor?id=train)
 
 5. Nun sind wir fast am Ziel. Wir haben ein trainiertes Modell. Nun soll es auch arbeiten.
 
