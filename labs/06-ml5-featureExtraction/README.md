@@ -66,6 +66,8 @@ Danach ist die Übung über einen Webbrowser der Wahl unter folgender Addresse e
         regressor.addImage(slider.value());
     });
     ```
+    
+    * Trainiere für 3 Position des Sliders jeweils 10 Bilder.
 
 4. Nachdem wir nun Trainingsdaten erzeugen können. Sollten wir das Modell auch trainieren.
 
