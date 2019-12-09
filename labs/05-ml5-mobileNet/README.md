@@ -102,4 +102,4 @@ Erweitere das Ergebnis aus Aufgabe 1:
     }
     ```
 
-    * Tipp: Das MobileNet funktioniert auch mit Bilder auf eurem Handy :)
+    * Tipp: Das MobileNet funktioniert auch mit Bildern auf eurem Handy :)
