@@ -84,7 +84,7 @@ Erweitere das Ergebnis aus Aufgabe 1:
     * Aktualisiere den Text innerhalb der `draw()`-Methode
 
 2. Macht ein Spiel daraus. Der Benutzer soll 3 Begriffe suchen und den Kamera zeigen.
-    * Speichere die gesuchten Begriffe in einer Variablen. Merke dir das aktuell gesuchte.
+    * Speichere die gesuchten Begriffe in einem Array. Merke dir den Index des aktuell gesuchten Wortes.
 
     ```javascript
     const words = ["banana", "shoe", "cellphone"];
