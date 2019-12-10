@@ -1,4 +1,4 @@
-# Einführung in ML: Feature Extractor
+# Einführung in ML: MobileNet
 
 [MobileNet](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) ist
 ein auf Geschwindigkeit optimiertes Machine Learning Modell zur Erkennung von Objekten in Bildern.
