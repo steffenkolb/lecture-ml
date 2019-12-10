@@ -57,7 +57,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
 
     Das `results`-Objekt ist ein Array aus Ergebnissen. Jedes Ergebnis besteht aus einem `label` (Bezeichner) und der `confidence` (prozentuale Sicherheit), dass das Objekt korrekt erkannt ist. Die Objekte sind so sortiert, dass das erste Objekt im Array am wahrscheinlichsten ist.
     
-    Hier ein Beispiel, was im Objekt `results` stecken kann (durch `console.logs(results)`):
+    Hier ein Beispiel, was im Objekt `results` stecken kann (durch `console.log(results)`):
 
     ```javascript
     [{
