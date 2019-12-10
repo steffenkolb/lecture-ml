@@ -1,4 +1,4 @@
-# Einführung in ML: Feature Extractor
+# Einführung in ML: MobileNet
 
 [MobileNet](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) ist
 ein auf Geschwindigkeit optimiertes Machine Learning Modell zur Erkennung von Objekten in Bildern.
@@ -55,10 +55,12 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
     }
     ```
 
-    Das `results`-Objekt ist ein Array aus Ergebnissen. Jedes Ergebnis besteht aus einem `label` (Bezeichner) und der `confidence` (prozentuale Sicherheit), dass das Objekt korrekt erkannt ist. Die Objekte sind so sortiert, dass das erste Objekt im Array am wahrscheinlichsten ist:
+    Das `results`-Objekt ist ein Array aus Ergebnissen. Jedes Ergebnis besteht aus einem `label` (Bezeichner) und der `confidence` (prozentuale Sicherheit), dass das Objekt korrekt erkannt ist. Die Objekte sind so sortiert, dass das erste Objekt im Array am wahrscheinlichsten ist.
+    
+    Hier ein Beispiel, was im Objekt `results` stecken kann (durch `console.log(results)`):
 
     ```javascript
-    results = [ {
+    [{
         "confidence": 0.80705750435590744,
         "label": "Dog"
     },{
@@ -67,7 +69,7 @@ Anschließend implementieren wir einen Image-Classifier in der  Datei `public/sk
     },{
         "confidence": 0.05277078226208687
         "label": "Bird"
-    }
+    }]
     ```
 
 Die Übung sollte nun komplett lauffähig sein, und die Ergebnisse in der `gotResults`-Methode behandelt werden
