@@ -5,10 +5,10 @@
  * see: https://learn.ml5js.org/docs/#/reference/feature-extractor
  */
 
- // variables for storing accessing the video, the regressor and the slider
+ // variables for storing accessing the video, the regressor and the options-dropdown
 let video;
 let classifier;
-let slider;
+let options;
 
 // this varialbe will store the currently detected light-value
 let predictedClass = "none";
@@ -31,8 +31,8 @@ function setup() {
   video.size(width, height);
   video.hide();
 
-  // Access the slider
-  slider = select('#class-select');
+  // Access the options
+  options = select('#class-select');
   
   // Extract the features from MobileNet
   let featureExtractor = ml5.featureExtractor('MobileNet', modelReady);
@@ -42,7 +42,7 @@ function setup() {
 
   // Add sample when pressing the button
   select('#addSample').mousePressed(function () {
-    classifier.addImage(slider.value());
+    classifier.addImage(options.value());
   });
 
   // Start training on button-press
