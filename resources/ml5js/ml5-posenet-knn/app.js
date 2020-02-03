@@ -1,7 +1,7 @@
 /**
  * This project creates a simple express server to serve a static website.
  * 
- * by Steffem Kolb @ https://github.com/steffenkolb/lecture-ml
+ * by Steffen Kolb @ https://github.com/steffenkolb/lecture-ml
  */
 
  // Define ports and addresses for webserver and Wekinator 
