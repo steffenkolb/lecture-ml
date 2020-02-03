@@ -13,7 +13,7 @@
  * See: https://github.com/MylesBorins/node-osc
  * 
  * base node + wekinator integration used from https://github.com/noisyneuron/wekOsc
- * updated and refined by Steffem Kolb @ https://github.com/steffenkolb/lecture-ml
+ * updated and refined by Steffen Kolb @ https://github.com/steffenkolb/lecture-ml
  */
 
  // Define ports and addresses for webserver and Wekinator 
